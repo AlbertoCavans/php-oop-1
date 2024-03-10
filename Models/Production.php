@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ ."/Genre.php";
+require_once __DIR__ ."/Movie.php";
 
 class Production {
 
@@ -7,17 +8,21 @@ class Production {
     public $language;
     public $rating;
     public $genre;
+    public $desc;
+    public $movie;
 
     function __construct(
         string $title, 
         string $language, 
         int $rating,
-        Genre $genre
+        Genre $genre,
+        Movie $movie,
         ) {
         $this->title = $title;
         $this->language = $language;
         $this->rating = $rating;
         $this->genre = $genre;
+        $this->movie = $movie;
     }
 
     public function set_title($title) {

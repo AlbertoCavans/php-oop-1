@@ -21,6 +21,8 @@ require_once __DIR__ ."/DB/productions.php";
             <li>Rating: <?= $production->rating ?></li>
             <li>Genre: <?= $production->genre->name ?></li>
             <li>Desc: <?= $production->genre->description ?></li>
+            <li>Profit: <?= $production->movie->profit ?></li>
+            <li>Duration: <?= $production->movie->duration ?></li>
         </ul>
 
     <?php endforeach; ?>

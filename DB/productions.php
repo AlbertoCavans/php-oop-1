@@ -2,11 +2,12 @@
 
 require_once __DIR__ ."/../Models/Production.php";
 require_once __DIR__ ."/../Models/Genre.php";
+require_once __DIR__ ."/../Models/Movie.php";
 
 
 
-$film = new Production("Film", "EN", 7, new Genre("Action", "First WW film"));
-$serie_TV = new Production("Serie TV", "FR", 8, new Genre("Romantic", "A couple story"));
+$film = new Production("Film", "EN", 7, new Genre("Action", "First WW film"), new Movie("2.1mln", "2.1h"));
+$serie_TV = new Production("Serie TV", "FR", 8, new Genre("Romantic", "A couple story"), new Movie("/", "/"));
 
 /* var_dump($serie_TV);
 var_dump($film); */
