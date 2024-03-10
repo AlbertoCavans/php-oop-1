@@ -19,6 +19,7 @@ require_once __DIR__ ."/DB/productions.php";
             <li>Title: <?= $production->title ?></li>
             <li>Language: <?= $production->language ?></li>
             <li>Rating: <?= $production->rating ?></li>
+            <li>Genre: <?= $production->genre->name ?></li>
         </ul>
 
     <?php endforeach; ?>

@@ -1,19 +1,23 @@
 <?php
+require_once __DIR__ ."/Genre.php";
 
 class Production {
 
     public $title;
     public $language;
     public $rating;
+    public $genre;
 
     function __construct(
         string $title, 
         string $language, 
-        int $rating
+        int $rating,
+        Genre $genre
         ) {
         $this->title = $title;
         $this->language = $language;
         $this->rating = $rating;
+        $this->genre = $genre;
     }
 
     public function set_title($title) {
