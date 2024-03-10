@@ -23,6 +23,7 @@ require_once __DIR__ ."/DB/productions.php";
             <li>Desc: <?= $production->genre->description ?></li>
             <li>Profit: <?= $production->movie->profit ?></li>
             <li>Duration: <?= $production->movie->duration ?></li>
+            <li>Number seasons: <?= $production->tvserie->nseasons ?></li>
         </ul>
 
     <?php endforeach; ?>
